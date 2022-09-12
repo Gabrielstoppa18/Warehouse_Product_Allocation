@@ -1,7 +1,7 @@
 import resolvedor
 import streamlit as st
 
-alg= resolvedor.SA()
+#alg= resolvedor.SA()
 
 st.set_page_config(
     page_title="Product Allocation",
