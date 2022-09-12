@@ -31,17 +31,17 @@ with c30:
     st.image("assets/image_3.png", width=244)
     st.header("")
 
-if st.button("Load Files"):
-    alg.arm.openFile()
-else:
-        st.info(
-            f"""
-                👆 Click On Load Files First
-                """
-        )
+
 
 if st.button("Solver"):
     alg.sa()
+
+else:
+        st.info(
+            f"""
+                👆 Click On Solver First
+                """
+        )
 
 if st.button("Open CSV File"):
     alg.save_xls()
