@@ -27,5 +27,5 @@ _max_width_()
 c30, c31, c32 = st.columns([2.5, 1, 3])
 
 with c30:
-    st.image("assets/image_3.png", width=400)
+    st.image("assets/image_3.png", width=244)
     st.header("")
