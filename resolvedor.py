@@ -7,6 +7,7 @@ import sys
 from pickle import LIST
 from pandas import DataFrame as pd
 from pandas import ExcelWriter as ex
+import streamlit as st
 
 
 class Pos():
@@ -200,8 +201,8 @@ class SA():
  
         self.organizar(self.order)
 
-
-        print("Custo inicial:", valor)
+        st.write("Custo inicial:", valor)
+        #print("Custo inicial:", valor)
         
         self.Xb = copy.deepcopy(self.SOL)
         self.orderB=copy.deepcopy(self.order)
@@ -248,9 +249,9 @@ class SA():
             
             self.T=self.alpha*self.T
             #print("-Temperatura Atual:",self.T)
-        print("-Solução Final do Problema:")
         #self.imprimeSol(self.Xb,self.orderB)
-        print("-Custo Total da solução:",self.xxb)
+        st.write("-Custo Total da solução:",self.xxb)
+        #print("-Custo Total da solução:",self.xxb)
         #self.datatxt(self.xxb,self.Xb,self.orderB)
         return self.xxb
 

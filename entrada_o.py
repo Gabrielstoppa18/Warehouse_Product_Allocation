@@ -1,11 +1,10 @@
-from tkinter import filedialog
 import networkx as nx
 import matplotlib.pyplot as plt
 
 #import matplotlib.pyplot as plt
 #import sympy as sp
 import numpy as np
-from tkinter import filedialog
+#from tkinter import filedialog
 
 
 
@@ -152,19 +151,19 @@ class Armazem:
     def openFile(self):
         with open('entrada.txt','w')as entrada:
            
-            filepath =filedialog.askopenfilename(initialdir="Desktop", title = "Open Layout", filetypes=(("Text files","*.txt"),("All files","*.*")))
+            filepath ='Layout.txt'#filedialog.askopenfilename(initialdir="Desktop", title = "Open Layout", filetypes=(("Text files","*.txt"),("All files","*.*")))
             entrada.write(filepath+"\n")
             file = open(filepath, 'r')
             arq = file.read().splitlines()
             print("Arquivo lido")
 
-            filepath2 =filedialog.askopenfilename(initialdir="Desktop", title = "Open Products", filetypes=(("Text files","*.txt"),("All files","*.*")))
+            filepath2 ='Products.txt'#filedialog.askopenfilename(initialdir="Desktop", title = "Open Products", filetypes=(("Text files","*.txt"),("All files","*.*")))
             entrada.write(filepath2+"\n")
             file2 = open(filepath2, 'r')
             arq2 = file2.read().splitlines()
             print("Arquivo lido")
 
-            filepath3 =filedialog.askopenfilename(initialdir="Desktop", title = "Open Order", filetypes=(("Text files","*.txt"),("All files","*.*")))
+            filepath3 ='instances_d5_ord5.txt'#filedialog.askopenfilename(initialdir="Desktop", title = "Open Order", filetypes=(("Text files","*.txt"),("All files","*.*")))
             entrada.write(filepath3+"\n")
             file3 = open(filepath3, 'r')
             arq3 = file3.read().splitlines()
