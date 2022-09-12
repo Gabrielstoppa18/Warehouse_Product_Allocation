@@ -253,6 +253,7 @@ class SA():
         st.write("-Custo Total da solução:",self.xxb)
         #print("-Custo Total da solução:",self.xxb)
         #self.datatxt(self.xxb,self.Xb,self.orderB)
+        self.save_xls
         return self.xxb
 
     def N1(self, SOL):
@@ -393,15 +394,13 @@ class SA():
     
     def save_xls(self):
         produtos=np.arange(1,len(self.Xb)+1)
-        print(len(produtos))
+
         nos=[]
         prateleira=[]
         for j in range(len(self.Xb)):
             a,b=self.Xb[j]
             nos.append(a)
             prateleira.append(b)
-        print(len(nos))
-        print(len(prateleira))
         produto_o=[]
         ordem=[]
         for i in range(len(self.orderB)):

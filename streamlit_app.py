@@ -43,8 +43,7 @@ else:
                 """
         )
 
-if st.button("Open CSV File"):
-    alg.save_xls()
+if st.button("View solution"):
     file_container = st.expander("Check the Solution")
     shows = pd.read_excel(file_name='Solution.xlsx')
     #uploaded_file.seek(0)
