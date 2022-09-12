@@ -186,7 +186,7 @@ class SA():
         #self.rd = np.random.randint(0,2)
         self.arm.openFile()
         self.alpha =0.8
-        self.it = 2
+        self.it = 5
         self.Tf = 1
         self.T0 = 5
         #self.arquivos()
@@ -317,7 +317,7 @@ class SA():
         #print("N3")
     def SA2(self,arm,ord):
         alpha =0.8
-        it = 2
+        it = 5
         Tf = 1
         T0 = 5
         T=T0
