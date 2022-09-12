@@ -1,4 +1,4 @@
-import resolvedor
+#import resolvedor
 import streamlit as st
 
 #alg= resolvedor.SA()
