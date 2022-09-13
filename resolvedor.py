@@ -404,6 +404,7 @@ class SA():
         produto_o=[]
         ordem=[]
         for i in range(len(self.orderB)):
+            print(b)
             a,b,c=self.orderB[i]
             produto_o.append(a)
             ordem.append(b)
