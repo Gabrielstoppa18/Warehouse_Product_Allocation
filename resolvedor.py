@@ -412,11 +412,11 @@ class SA():
 
         # Usando o ExcelWriter, cria um doc .xlsx, usando engine='xlsxwriter'
         #writer = ex('Solution.xlsx')
-        writer = ex('Solution.xlsx', engine='xlsxwriter')
+        #writer = ex('Solution.xlsx', engine='xlsxwriter')
+
         # Armazena cada df em uma planilha diferente do mesmo arquivo
-        df1.to_excel(writer, sheet_name='Collect Orders',index=False)
-        df2.to_excel(writer, sheet_name='Layout Warehouse',index=False)
+        df1.to_csv('orders.csv')
+        df2.to_csv('layout.csv')
 
         # Fecha o ExcelWriter e gera o arquivo .xlsx
-        writer.save()
         print("Solucao salva!")

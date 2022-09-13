@@ -45,6 +45,6 @@ else:
 
 if st.button("View solution"):
     file_container = st.expander("Check the Solution")
-    shows = pd.read_excel(file_name='Solution.xlsx')
+    shows1 = pd.read_csv('orders.csv')
     #uploaded_file.seek(0)
-    file_container.write(shows)
+    file_container.write(shows1)
