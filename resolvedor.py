@@ -407,7 +407,7 @@ class SA():
             print(b)
             a,b,c=self.orderB[i]
             produto_o.append(a)
-            ordem.append(b)
+            #ordem.append(b)
         df1 = pd({'Products': produto_o,'Order': ordem})
         df2 = pd({'Products': produtos,'Nodes': nos,'Shelves': prateleira})
 
