@@ -46,5 +46,10 @@ else:
 if st.button("View solution"):
     file_container = st.expander("Check the Solution")
     shows1 = pd.read_csv('orders.csv')
+    shows2 = pd.read_csv('layout.csv')
     #uploaded_file.seek(0)
     file_container.write(shows1)
+
+    file_container2 = st.expander("Check the Solution")
+
+    file_container.write(shows2)
