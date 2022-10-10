@@ -202,7 +202,7 @@ class SA():
  
         self.organizar(self.order)
 
-        st.write("Custo inicial:", valor)
+        st.write("Initial Cost:", valor)
         #print("Custo inicial:", valor)
         
         self.Xb = copy.deepcopy(self.SOL)
@@ -251,7 +251,7 @@ class SA():
             self.T=self.alpha*self.T
             #print("-Temperatura Atual:",self.T)
         #self.imprimeSol(self.Xb,self.orderB)
-        st.write("-Custo Total da solução:",self.xxb)
+        st.write("-Total cost of solution:",self.xxb)
         #print("-Custo Total da solução:",self.xxb)
         #self.datatxt(self.xxb,self.Xb,self.orderB)
         self.save_xls
