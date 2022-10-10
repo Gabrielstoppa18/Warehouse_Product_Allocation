@@ -39,10 +39,14 @@ st.markdown('''Organizing products on shelves in order to facilitate collection 
 st.markdown('''**Instructions** 
 
 1- Select your test order.
+
 2- Click on Solver Button .
-3- Wait for the otal cost of solution
-4- Click on View Solution Button
-5- Check the collect order and the warehouse layout''')
+
+3- Wait for the otal cost of solution.
+
+4- Click on View Solution Button.
+
+5- Check the collect order and the warehouse layout.''')
 
 order=st.selectbox('Chose order',
     ["instances_d5_ord5.txt","instances_d5_ord6.txt","instances_d5_ord7.txt",
