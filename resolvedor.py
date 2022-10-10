@@ -182,9 +182,9 @@ class SA():
         return sum(objetivo)
 
     
-    def sa(self):
+    def sa(self,order):
         #self.rd = np.random.randint(0,2)
-        self.arm.openFile()
+        self.arm.openFile(order)
         self.alpha =0.8
         self.it = 5
         self.Tf = 1
