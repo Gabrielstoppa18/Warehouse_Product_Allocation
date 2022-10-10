@@ -42,7 +42,7 @@ st.markdown('''**Instructions**
 
 2- Click on Solver Button .
 
-3- Wait for the otal cost of solution.
+3- Wait for the total cost of solution.
 
 4- Click on View Solution Button.
 
