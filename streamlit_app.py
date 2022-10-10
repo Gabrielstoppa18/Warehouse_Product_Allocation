@@ -37,9 +37,9 @@ st.markdown('''Organizing products on shelves in order to facilitate collection 
  The developed tool seeks to optimally generate a disposition to allocate products and a sequence to collect products from orders in a way that the operational cost of collection is as low as possible.''')
 
 order=st.selectbox('Chose order',
-    ["instances\instances_d5_ord5.txt","instances\instances_d5_ord6.txt","instances\instances_d5_ord7.txt",
-        "instances\instances_d10_ord5.txt","instances\instances_d10_ord6.txt","instances\instances_d10_ord7.txt",
-        "instances\instances_d20_ord5.txt","instances\instances_d20_ord6.txt","instances\instances_d20_ord7.txt"
+    ["instances_d5_ord5.txt","instances_d5_ord6.txt","instances_d5_ord7.txt",
+        "instances_d10_ord5.txt","instances_d10_ord6.txt","iinstances_d10_ord7.txt",
+        "instances_d20_ord5.txt","instances_d20_ord6.txt","instances_d20_ord7.txt"
     ],
     index=0,
 )
