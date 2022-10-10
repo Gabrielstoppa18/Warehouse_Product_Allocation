@@ -60,11 +60,7 @@ if st.button("Solver"):
     alg.sa(order)
 
 else:
-        st.info(
-            f"""
-                👆 Click On Solver First
-                """
-        )
+        pass
 
 if st.button("View solution"):
     file_container = st.expander("Check the collect order")
