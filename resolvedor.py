@@ -185,7 +185,7 @@ class SA():
     def sa(self,order):
         #self.rd = np.random.randint(0,2)
         self.arm.openFile(order)
-        print (order)
+        
         self.alpha =0.8
         self.it = 5
         self.Tf = 1
