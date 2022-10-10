@@ -163,7 +163,7 @@ class Armazem:
             arq2 = file2.read().splitlines()
             print("Arquivo lido")
 
-            filepath3 =order#filedialog.askopenfilename(initialdir="Desktop", title = "Open Order", filetypes=(("Text files","*.txt"),("All files","*.*")))
+            filepath3 ="instances\instances_d5_ord5.txt"#filedialog.askopenfilename(initialdir="Desktop", title = "Open Order", filetypes=(("Text files","*.txt"),("All files","*.*")))
             entrada.write(filepath3+"\n")
             file3 = open(filepath3, 'r')
             arq3 = file3.read().splitlines()
