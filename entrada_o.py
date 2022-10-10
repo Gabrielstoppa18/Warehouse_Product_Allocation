@@ -150,7 +150,7 @@ class Armazem:
 
     def openFile(self,order):
         with open('entrada.txt','w')as entrada:
-           
+            print (order)
             filepath ='Layout.txt'#filedialog.askopenfilename(initialdir="Desktop", title = "Open Layout", filetypes=(("Text files","*.txt"),("All files","*.*")))
             entrada.write(filepath+"\n")
             file = open(filepath, 'r')
@@ -163,7 +163,7 @@ class Armazem:
             arq2 = file2.read().splitlines()
             print("Arquivo lido")
 
-            filepath3 ="instances\instances_d5_ord5.txt"#filedialog.askopenfilename(initialdir="Desktop", title = "Open Order", filetypes=(("Text files","*.txt"),("All files","*.*")))
+            filepath3 ="instances_d5_ord5.txt"#filedialog.askopenfilename(initialdir="Desktop", title = "Open Order", filetypes=(("Text files","*.txt"),("All files","*.*")))
             entrada.write(filepath3+"\n")
             file3 = open(filepath3, 'r')
             arq3 = file3.read().splitlines()
